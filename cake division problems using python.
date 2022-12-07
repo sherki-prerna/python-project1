@@ -1,0 +1,13 @@
+for i in range(int(input('No of testcases:'))):
+N=int(input('No of pieces: '))
+s="No"
+t="No"
+u="No"
+if N>=0:
+if 360%N==0 : #Is it possible to make exactly N equal pieces from the whole cake?
+s="Yes"
+if N<=360: #Is it possible to make exactly N pieces from the whole cake?
+t="Yes"
+if N<=26: #Is it possible to make exactly N pieces from the whole cake, in such a way that no two of them are equal?
+u="Yes"
+print(s,t,u)
